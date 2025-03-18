@@ -1,0 +1,50 @@
+/* Davul resmini ölçekle ve ortala */
+.drum img {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 30%; /* Görselin genişliği */
+    height: auto; /* Oranları koru */
+    object-fit: contain;
+}
+
+.drum {
+    display: flex;
+    justify-content: center;  /* Yatayda ortala */
+    align-items: center;  /* Dikeyde ortala */
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    gap: 3%;
+}
+
+/* Butonların görünümü */
+button {
+    width: 70px;   /* Sabit genişlik */
+    height: 70px;  /* Sabit yükseklik */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #192de4; /* Mavi arka plan */
+    color: white;  /* Beyaz yazı */
+    font-size: 4%; /* Harf boyutu */
+    font-weight: bold; /* Kalın yazı */
+    border: none; /* Kenarlık kaldırıldı */
+    border-radius: 8px; /* Butonlara hafif yuvarlak köşe */
+    cursor: pointer; /* İmleç butonun üstüne gelince el simgesi olur */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Butona basıldığında efekt */
+.button:active {
+    transform: scale(0.95); /* Hafif küçültme efekti */
+}
+
+/* Butonun üzerine gelince rengi değiştirme */
+.button:hover {
+    background-color: #2980b9; /* Daha koyu mavi */
+}
